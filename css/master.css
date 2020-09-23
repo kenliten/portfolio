@@ -1,135 +1,165 @@
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
- margin:0;
- padding:0;
- border:0;
- outline:0;
- font-size:100%;
- vertical-align:baseline;
- background:transparent;
+body{
+	background-color: #757575;
 }
 
-body {
- line-height:1;
+#navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #263238;
+	text-align: center;
+	z-index: 100;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
- display:block;
+.nav-link{
+	display: inline-block;
+	padding: 18px 16px;
+	font-size: 16px;
+	margin: 0 4px;
+	color: #E0E0E0;
 }
 
-nav ul {
- list-style:none;
+.nav-link:hover{
+	text-decoration: none;
+	background-color: #546E7A;
+	color: #E0E0E0;
 }
 
-blockquote, q {
- quotes:none;
+#welcome-section{
+	width: 100%;
+	height: 100vh;
+	background-color: #424242;
+	color: #fff;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
- content:'';
- content:none;
+.welcome{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-a {
- margin:0;
- padding:0;
- font-size:100%;
- vertical-align:baseline;
- background:transparent;
+#about-container{
+	width: 100%;
+	padding: 16px;
+	max-width: 720px;
+	margin: 0 auto;
+	background-color: #607D8B;
+	color: #fff;
 }
 
-/* change colours to suit your needs */
-ins {
- background-color:#ff9;
- color:#000;
- text-decoration:none;
+#about-container p{
+	margin: 16px 0;
 }
 
-/* change colours to suit your needs */
-mark {
- background-color:#ff9;
- color:#000;
- font-style:italic;
- font-weight:bold;
+#profile-link{
+	text-align: center; 
+	color: #BDBDBD; 
+	font-size: 2em; 
+	background-color: #455A64;
+	padding: 52px 0;
+	margin-top: 8px; 
+	display: block;
 }
 
-del {
- text-decoration: line-through;
+#profile-link:hover{
+	color: #455A64;
+	background-color: #BDBDBD;
+	text-decoration: none;
 }
 
-abbr[title], dfn[title] {
- border-bottom:1px dotted;
- cursor:help;
+#projects-container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+	max-width: 720px;
+	margin: 0 auto;
 }
 
-table {
- border-collapse:collapse;
- border-spacing:0;
+.project-tile{
+	background-color: #607D8B;
+	text-align: center;
 }
 
-/* change border colour to suit your needs */
-hr {
- display:block;
- height:1px;
- border:0;
- border-top:1px solid #cccccc;
- margin:1em 0;
- padding:0;
+.project-tile img{
+	border: 16px solid transparent;
 }
 
-input, select {
- vertical-align:middle;
+.project-link{
+	background-color: #455A64;
+	color: #E0E0E0;
+	display: block;
+	padding: 10px 0px;
 }
 
-/* User styles */
-/* General styles */
-
-/* small screens */
-
-@media (min-width: 576px) {
-	/* styles here */
+.project-link:hover{
+	text-decoration: none;
+	color: #fff;
 }
 
-/* medium screens */
-
-@media (min-width: 768px) {
-	/* styles here */
+.project-link:hover::before{
+	content: "open";
 }
 
-/* large screens */
-
-@media (min-width: 992px) {
-	/* styles here */
+.project-link:hover::after{
+	content: "(true);";
+	color: #fff;
 }
 
-/* extralarge screens */
-
-@media (min-width: 1200px) {
-	/* styles here */
+img{
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
-/* printing styles */
+#social{
+	background-color: #263238;
+	padding-top: 52px;
+	width: 100%;
+	height: 100vh;
+}
 
-@media print {
-	/* styles here */
+#social-container{
+	width: 100%;
+	max-width: 762px;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+#social-container a{
+	color: #fff;
+	padding: 8px;
+	display: inline-block;
+}
+
+.social-button{
+	background-color: #fff;
+	color: #424242 !important;
+	padding: 12px !important;
+	display: inline-block !important;
+	text-align: center;
+	width: 150px;
+	margin: 4px auto;
+}
+
+.social-button:hover{
+	text-decoration: none;
+	background-color: #E0E0E0;
+	color: #888888 !important;
+}
+
+@media (max-width: 768px) {
+	#projects-container{
+		grid-template-columns: 1fr;
+	}
+
+	h2, h1, #profile-link{
+		margin: 0 !important;
+	}
+
+	h1{
+		font-size: 8vmin;
+	}
 }

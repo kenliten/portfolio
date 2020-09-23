@@ -1,21 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>portfolio</title>
+    <title>Portfolio</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenliten/nvk/dist/nvk.reset.css">
     <link rel="stylesheet" href="css/master.css">
+
+    <script src="https://kit.fontawesome.com/a3a08bbca8.js" crossorigin="anonymous"></script>
   </head>
   <body>
 
-    <h1>portfolio</h1>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <div id="main"></div>
+    <nav id="navbar">
+      <a class="nav-link" href="#welcome-section">Intro</a>
+      <a class="nav-link" href="#about-me">About Me</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#profile-link">My Profile</a>
+      <a class="nav-link" href="#social">Social</a>
+    </nav>
+    
+    <div id="welcome-section">
+      <div class="welcome">
+        <h1>(function <var><span style="color: #4FC3F7;">developer</span></var> (){</h1>
+          <p style="padding-left: 42px;">
+            <pre>
+              <var style="color: #EF5350;">return</var>&nbsp;{ 
+                  <span style="color: #4FC3F7;">firstName</span>: "Otoniel",
+                  <span style="color: #4FC3F7;">lastName</span>: "Reyes",
+                  <span style="color: #4FC3F7;">from</span>: "Dominican Republic",
+                  <span style="color: #4FC3F7;">mainProgrammingLanguage</span>: "JavaScript",
+                  <span style="color: #4FC3F7;">motto</span>: "Leave a mark in the world",
+                  <span style="color: #4FC3F7;">about</span>: "An intense web development worker"
+                };
+              </pre>
+          </p>
+        <h1>})();</h1>
+      </div>
+    </div>
 
-    <script type="text/javascript" src="js/vendor/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <div id="about-me">
+      <h1 style="text-align: center; color: #fff; background-color: #263238;padding: 16px 0;margin-bottom: 8px;">About Me</h1>
+      <div id="about-container">
+        <p>
+          My name is the least, really. But hey, I am Otoniel Reyes, a native of Miches, a small community in the northeast of the Dominican Republic, a web designer with 5 years of experience, my main intention is to contribute to the technological development of my town, country and the world.
+        </p>
+        <p>
+          My greatest motivation is the constant desire to leave a positive and permanent mark on the world, it is not because of ego, I swear, I simply do not believe that God has brought me into the world to live without being noticed by life.
+        </p>
+        <p>
+          I am sure that the world urgently needs a transformation, and I believe that this is the reason for my existence, my mission.
+        </p>
+      </div>
+    </div>
+
+    <div id="projects">
+      <h1 style="text-align: center; color: #fff; background-color: #263238;padding: 16px 0;margin: 8px 0;">My Projects</h1>
+      <div id="projects-container">
+        <div class="project-tile">
+          <img src="images/btgenlogo.png" alt="BTGen Logo">
+          <a href="https://github.com/kenliten/btgen" class="project-link" title="The web development boilerplate CLI generator tool. ">BTGen</a>
+        </div>
+        <div class="project-tile">
+          <img src="images/flujoslogo.png" alt="Flujos Logo">
+          <a href="https://github.com/kenliten/flujos" class="project-link" title="Any database, only one way.">Flujos</a>
+        </div>
+        <div class="project-tile">
+          <img src="images/grademylogo.png" alt="Grademy Logo">
+          <a href="https://github.com/kenliten/grademy" class="project-link" title="The education platform">Grademy</a>
+        </div>
+        <div class="project-tile">
+          <img src="images/envoislogo.png" alt="Envois Logo">
+          <a href="https://github.com/kenliten/envois" class="project-link" title="The simplest way to build your own JavaScript based invoicing app">Envois</a>
+        </div>
+        <div class="project-tile">
+          <img src="images/invoicerlogo.png" alt="Invoicer Logo">
+          <a href="https://github.com/kenliten/invoicer" class="project-link" title="How to create an Invoicing Electron Application - Electron Cookbook">INvoicer</a>
+        </div>
+        <div class="project-tile">
+          <img src="images/clockerlogo.png" alt="">
+          <a href="https://github.com/kenliten/clocker.js" class="project-link" title="The simplest JS clock library ">Clocker.js</a>
+        </div>
+        <div class="project-tile">
+          <img src="images/grclogo.png" alt="">
+          <a href="https://github.com/kenliten/grc" class="project-link" title="Un Gestor de Relaciones con Clientes simple basado en ElectronJS y PouchDB">GRC</a>
+        </div>
+        <div class="project-tile">
+          <img src="images/colorpickerlogo.png" alt="">
+          <a href="https://github.com/kenliten/material-color-picker" class="project-link" title="A Material Design Color Picker">MaterialColorPicker</a>
+        </div>
+        <div class="project-tile">
+          <img src="images/guiatodologo.png" alt="">
+          <a href="https://github.com/kenliten/guia-todo" class="project-link" title="A simple vue.js/PouchDB based todo app">GuiaToDo</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://github.com/kenliten/" target="_blank" id="profile-link">Browse All my Projects</a>
+
+    <div id="social"><h1 style="text-align: center; color: #fff; background-color: #263238;padding: 16px 0;margin-bottom: 8px;">Social Connections</h1>
+      <div id="social-container">
+        <a class="mail-link" href="mailto:otonielreyesgalay@gmail.com"><i class="fas fa-envelope"></i> otonielreyesgalay@gmail.com</a><br>
+        <a href="tel:+18494020338"><i class="fas fa-phone"></i> +1 849 402 0338</a>
+        <address>
+          <pre>
+<i class="fas fa-map-marker-alt"></i> Main Street, Los Franceses
+    Miches, El Seibo. 24000
+    Dominican Republic
+          </pre>
+        </address>
+        <a href="https://facebook.com/otonielreyesofficial" class="social-button"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://twitter.com/oreyesgalay" class="social-button"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="https://instagram.com/oreyesgalay" class="social-button"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.linkedin.com/in/otoniel-reyes-galay-62881414a/" class="social-button"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://www.youtube.com/channel/UCSkV0RkzyT9ntGPMBoXeXLQ" class="social-button"><i class="fab fa-youtube"></i> Youtube</a>
+        <a href="https://pinterest.com/oreyesgalay" class="social-button"><i class="fab fa-pinterest"></i> Pinterest</a>
+      </div>
+    </div>
 
   </body>
 </html>
